@@ -8,9 +8,8 @@ build_script:
 # Suppress output from stack setup, as there is a lot and it's not necessary.
 - stack setup --no-terminal > nul
 - stack build --only-snapshot --no-terminal
-- stack --local-bin-path . install haskmas
+- stack --local-bin-path . install bracket
 # Set a magical environment variable
-- cmd: for /f %%i in ('stack exec -- haskmas -v') do set HASKMAS_VERSION=%%i
 
 artifacts:
 - path: bracket.exe
