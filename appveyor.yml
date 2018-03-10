@@ -12,6 +12,6 @@ build_script:
 # Set a magical environment variable
 
 artifacts:
-- path: bracket.exe
+- path: bracket/
   name: bracket
   type: zip
